@@ -5,7 +5,11 @@ _by <your-name-here>_
 ---
 ## Git vs. GitHub
 
+git:  
 
+github:  
+
+diference:  
 
 ---
 ## Initial Setup
@@ -15,10 +19,19 @@ _by <your-name-here>_
 ---
 ## Repository Setup
 
+git init:
 
 
 ---
 ## Workflow & Commands
+
+git status:
+
+git add:
+
+git commit:
+
+git push:
 
 
 
