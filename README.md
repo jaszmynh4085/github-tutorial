@@ -58,7 +58,8 @@ Also pushes your commits to your remote repository but does not tell it where to
 _(use this for other commits you have made after pushing your first commit with `git push -u origin master`)_
 
 How it should look if done correctly:
-```jaszmynh4085:~/workspace/github-tutorial (master) $ git push
+```
+jaszmynh4085:~/workspace/github-tutorial (master) $ git push
 Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
 Counting objects: 3, done.
 Delta compression using up to 8 threads.
