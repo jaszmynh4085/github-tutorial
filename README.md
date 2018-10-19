@@ -57,6 +57,18 @@ _(this should be used once at the beginning)_
 Also pushes your commits to your remote repository but does not tell it where to push the commits to.  
 _(use this for other commits you have made after pushing your first commit with `git push -u origin master`)_
 
+How it should look if done correctly:
+```jaszmynh4085:~/workspace/github-tutorial (master) $ git push
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 640 bytes | 640.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To github.com:jaszmynh4085/github-tutorial.git
+   3112af2..853bb2a  master -> master
+```
 
 ---
 ## Rolling Back Changes
