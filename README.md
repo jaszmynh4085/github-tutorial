@@ -34,6 +34,37 @@ Initializes your repository so thaty you can use git commands.
 A way to check up on the status of your work.  
 (use often as it can tell you if you added or committed your work along with some helpful hints.)
 
+if a file has been modified but not added to the staging area it will apear red and above it would tell you how to add the file or remove the changes you have made
+
+Example:
+```bash
+jaszmynh4085:~/workspace/github-tutorial (master) $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+
+if a file has been added but not commited it will show up in green and tell you how to unsatge if you had made a mistake. 
+
+Example:
+```bash
+jaszmynh4085:~/workspace/github-tutorial (master) $ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   README.md
+```
+
 **git add:**  
 `git add <filename>`  
 Adds your edits to the staging area.  
@@ -58,7 +89,7 @@ Also pushes your commits to your remote repository but does not tell it where to
 _(use this for other commits you have made after pushing your first commit with `git push -u origin master`)_
 
 How it should look if done correctly:
-```
+```bash
 jaszmynh4085:~/workspace/github-tutorial (master) $ git push
 Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
 Counting objects: 3, done.
