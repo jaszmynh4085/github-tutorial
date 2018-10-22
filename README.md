@@ -5,13 +5,11 @@ _by Jaszmyn Hernandez_
 ---
 ## Git vs. GitHub
 
-**git:**  
+**git** is your workspace.
 
+**github** is where your work will be stored.
 
-**github:**  
-
-
-**diference:**  
+the difference between the two is that most of the work will be done with git and its commands while github just holds the work that you have made. git can be used alone while github requires git.
 
 
 ---
@@ -23,7 +21,7 @@ _by Jaszmyn Hernandez_
 ## Repository Setup
 
 **git init:**  
-Initializes your repository so thaty you can use git commands.
+Initializes your repository so that you can use git commands.
 
 
 
