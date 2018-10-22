@@ -9,7 +9,7 @@ _by Jaszmyn Hernandez_
 
 **github** is where your work will be stored.
 
-the difference between the two is that most of the work will be done with git and its commands while github just holds the work that you have made. git can be used alone while github requires git.
+the difference between the two is that most of the work will be done with git and its commands while github just holds the work that you have made. Git can be used alone while github requires git.
 
 
 ---
@@ -21,9 +21,10 @@ the difference between the two is that most of the work will be done with git an
 ## Repository Setup
 
 **git init:**  
-Initializes your repository so that you can use git commands.
+Initializes your repository so that you can use git commands.  
+_(use this once at the beginning **inside** the directory you want to make your repository)_
 
-
+Now that git is initialized you can start working with its commands. The simple and most used ones are `git add` and `git commit` (info on what they do in workflow and commands). these are used to save edits that you have made to your file. 
 
 ---
 ## Workflow & Commands
@@ -32,7 +33,7 @@ Initializes your repository so that you can use git commands.
 A way to check up on the status of your work.  
 (use often as it can tell you if you added or committed your work along with some helpful hints.)
 
-if a file has been modified but not added to the staging area it will apear red and above it would tell you how to add the file or remove the changes you have made
+If a file has been modified but not added to the staging area it will apear red and above it would tell you how to add the file or remove the changes you have made
 
 Example:
 ```bash
@@ -49,7 +50,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-if a file has been added but not commited it will show up in green and tell you how to unsatge if you had made a mistake. 
+If a file has been added but not commited it will show up in green and tell you how to unsatge if you had made a mistake. 
 
 Example:
 ```bash
@@ -74,13 +75,13 @@ Adds your edits to the staging area.
 Commits whats on the staging area. _Sorta like finalizing it_  
 (think of taking a picture of the people you had just added into frame)
 
-The `-m ""` after `git commit` is for you to write a little note for yourself _and others_ on what you have done in that commit. It is best to keep it sort and make sure that you do not use past tense such as "changed" in your notes.
+The `-m ""` after `git commit` is for you to write a little note for yourself _and others_ on what you have done in that commit. It is best to keep it short and make sure that you do not use past tense such as "changed" in your message.
 
 
 **git push:**  
 `git push -u origin master`  
 Pushes your commits to your remote repository and it tells the computer to remember where to push the commits (which is the master branch of your repository that had been nicked named "origin")  
-_(this should be used once at the beginning)_
+_(this should be used once with your first commit)_
 
 `git push`  
 Also pushes your commits to your remote repository but does not tell it where to push the commits to.  
