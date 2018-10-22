@@ -27,7 +27,7 @@ Next we have to get things in order so staying in personal settings go down till
 After doing that you will be told to give the key as well as a title. Now the title can be anything but i would advise to make it "cloud9" since it will be what we will work with and the key you can also find on cloud9.  
 To get the key needed, go to your cloud9 and click on the workspace you will be using. (**DO NOT** click clone or open just click the workspace in general). From there click the gear/settings in the top right corner next to the plus sign. next look to your left and find "SSH keys" and click on it. It will bring you to a place with two very long keys but you will only copy and paste the first one into github before clicking "add SSH key".
 
-And with everythign set up we can now continue
+And with everything set up we can now continue
 
 
 ---
@@ -38,13 +38,14 @@ And with everythign set up we can now continue
 Initializes your repository so that you can use git commands.  
 _(use this once at the beginning **inside** the directory you want to make your repository. To get inside use cd "directory name")_
 
-Now that git is initialized you can start working with its commands. what you will mainly be using are `git add` and `git commit` these commands are used to save edits that you have made to your file. (more info on what they do in workflow and commands)
+Now that git is initialized you can start working with its commands. what you will mainly be using are `git add` and `git commit` these commands are used to save edits that you have made to your file. (more info on what they do in  Workflow & Commands)
 
 Then if you want to save your work, _just in case cloud9 ever crashes and stops working_, you would want to make a new repo on github. This will be called your remote repository.  
 To make a new repository on github look to the top left of the website at the plus sign that is between a bell and your profile image. Click on the plus sign and click "new repository".  
+With the new repository made check at the top, _below the words "quick setup"_, and make sure that SSH is selected. This is to make things easier on yourself when you push, (more info on what push is/does in  Workflow & Commands), as your username and password wont have to be put in every time you want to push your new commits into your remote repository.  
+Now with SSH chosen go down to "or push an existing repository from the command line" copy and paste the first line into the command line on cloud9 then the second one if you already have a commit ready to be pushed. (more in Workflow & Commands)
 It doesnt matter in which order the repositories are made but what you need to make sure is that both repositories, the one from github and the one youve made made in cloud9, have the same name or else it wont work.
 
-With the new repository made check at the top, _below the words "quick setup"_, and make sure that SSH is selected. This is to make things easier on yourself when you push, (more info on what push is/does in workflow and commands), as your username and password wont have to be put in every time you want to push your new commits into your remote repository.
 
 ---
 ## Workflow & Commands
@@ -123,3 +124,11 @@ To github.com:jaszmynh4085/github-tutorial.git
 
 ---
 ## Rolling Back Changes
+
+Some things were breifly mentioned in Workflow & Commands on how to undo changes but lets go over them again and inclue how to undo a commit/push. 
+
+To undo a regular edit had not been added to the staging area use the command `git status` and above the modified file will be commands that you could use next. one of those commands (`git checkout -- <file>`) is for undoing your edits. all you have to do is add the name of your file in where it says "file".
+
+If you had already added the file to the staging area do not worry. again just use `git status` and above the modified file it will tell you to use `git reset HEAD <file>` to unstage. 
+
+now to undo commits is a little harder and `git status` will not be useful at this point. instead you should go to your remote repository on github and click on #commits (which can be found above branch: master and new pull request) and click on the clipboard that can be found next to a bunch of numbers to your right.
