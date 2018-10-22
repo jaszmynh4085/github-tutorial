@@ -5,16 +5,29 @@ _by Jaszmyn Hernandez_
 ---
 ## Git vs. GitHub
 
-**git** is your workspace.
+**Git** is your workspace.
 
-**github** is where your work will be stored.
+**Github** is where your work will be stored.
 
-the difference between the two is that most of the work will be done with git and its commands while github just holds the work that you have made. Git can be used alone while github requires git.
+The difference between the two is that most of the work will be done with git and its commands while github just holds the work that you have made. Git can be used alone while github requires git.
 
 
 ---
 ## Initial Setup
 
+Of course, before we start working with git, you should have a github account and making one should be fairly easy.
+1. go to github.com
+2. put in the information that is required of you (username, email and password)
+3. click the green button that says "create your account"
+4. choose your plan, in this case the free one
+5. click continue 
+6. veryify your email and now youre done!
+
+Next we have to get things in order so staying in personal settings go down till you see "SSH and GPG keys". Here you will see that there are no keys for either one so make one for SSH since this is what we will be using along with cloud9.   
+After doing that you will be told to give the key as well as a title. Now the title can be anything but i would advise to make it "cloud9" since it will be what we will work with and the key you can also find on cloud9.  
+To get the key needed, go to your cloud9 and click on the workspace you will be using. (**DO NOT** click clone or open just click the workspace in general). From there click the gear/settings in the top right corner next to the plus sign. next look to your left and find "SSH keys" and click on it. It will bring you to a place with two very long keys but you will only copy and paste the first one into github before clicking "add SSH key".
+
+And with everythign set up we can now continue
 
 
 ---
