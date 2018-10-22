@@ -21,22 +21,29 @@ the difference between the two is that most of the work will be done with git an
 ## Repository Setup
 
 **git init:**  
+`git init`
 Initializes your repository so that you can use git commands.  
-_(use this once at the beginning **inside** the directory you want to make your repository)_
+_(use this once at the beginning **inside** the directory you want to make your repository. To get inside use cd "directory name")_
 
-Now that git is initialized you can start working with its commands. The simple and most used ones are `git add` and `git commit` (info on what they do in workflow and commands). these are used to save edits that you have made to your file. 
+Now that git is initialized you can start working with its commands. what you will mainly be using are `git add` and `git commit` these commands are used to save edits that you have made to your file. (more info on what they do in workflow and commands)
+
+Then if you want to save your work, _just in case cloud9 ever crashes and stops working_, you would want to make a new repo on github. This will be called your remote repository.  
+To make a new repository on github look to the top left of the website at the plus sign that is between a bell and your profile image. Click on the plus sign and click "new repository".  
+It doesnt matter in which order the repositories are made but what you need to make sure is that both repositories, the one from github and the one youve made made in cloud9, have the same name or else it wont work.
+
+With the new repository made check at the top, _below the words "quick setup"_, and make sure that SSH is selected. This is to make things easier on yourself when you push, (more info on what push is/does in workflow and commands), as your username and password wont have to be put in every time you want to push your new commits into your remote repository.
 
 ---
 ## Workflow & Commands
 
 **git status:**  
-A way to check up on the status of your work.  
+`git status` is a way to check up on the status of your work.  
 (use often as it can tell you if you added or committed your work along with some helpful hints.)
 
-If a file has been modified but not added to the staging area it will apear red and above it would tell you how to add the file or remove the changes you have made
+If a file (in this case modified:   README.md) has been modified but not added to the staging area it should apear red and above it would tell you how to add the file or remove the changes you have made
 
 Example:
-```bash
+``` 
 jaszmynh4085:~/workspace/github-tutorial (master) $ git status
 On branch master
 Your branch is up-to-date with 'origin/master'.
@@ -50,7 +57,7 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 ```
 
-If a file has been added but not commited it will show up in green and tell you how to unsatge if you had made a mistake. 
+If a file (in this case modified:   README.md) has been added but not commited it should show up in green and tell you how to unsatge if you had made a mistake. 
 
 Example:
 ```bash
@@ -88,7 +95,7 @@ Also pushes your commits to your remote repository but does not tell it where to
 _(use this for other commits you have made after pushing your first commit with `git push -u origin master`)_
 
 How it should look if done correctly:
-```bash
+``` bash
 jaszmynh4085:~/workspace/github-tutorial (master) $ git push
 Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
 Counting objects: 3, done.
