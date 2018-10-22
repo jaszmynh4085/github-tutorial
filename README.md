@@ -127,8 +127,16 @@ To github.com:jaszmynh4085/github-tutorial.git
 
 Some things were breifly mentioned in Workflow & Commands on how to undo changes but lets go over them again and inclue how to undo a commit/push. 
 
-To undo a regular edit had not been added to the staging area use the command `git status` and above the modified file will be commands that you could use next. one of those commands (`git checkout -- <file>`) is for undoing your edits. all you have to do is add the name of your file in where it says "file".
+To undo a regular edit had not been added to the staging area use the command `git status` and above the modified file will be commands that you could use next. One of those commands (`git checkout -- <file>`) is for undoing your edits. all you have to do is add the name of your file in where it says "file".
 
-If you had already added the file to the staging area do not worry. again just use `git status` and above the modified file it will tell you to use `git reset HEAD <file>` to unstage. 
+If you had already added the file to the staging area do not worry. Again just use `git status` and above the modified file it will tell you to use `git reset HEAD <file>` to unstage. 
 
-now to undo commits is a little harder and `git status` will not be useful at this point. instead you should go to your remote repository on github and click on #commits (which can be found above branch: master and new pull request) and click on the clipboard that can be found next to a bunch of numbers to your right.
+Now to undo commits is a little harder and `git status` will not be useful at this point. Plus there are multiple way to undo a commiti that can also undo add and edits. 
+
+First lets start with just undoing the commit and to do that we will use the command `git reset --soft HEAD~1`. Using this command doesnt do anything to the changes and does not unstage the file that you've added. If you wanted you could just commit it all over again and nothing different would happen.
+
+Next will be how to undo the commit and add by using the command `git reset HEAD~1`. So by using this the edits are still there but they have not been added to the staging area. (It is best to use this rather than whats coming next since maybe you only needed to add or delete something minor).
+
+Finally to undo it all use the command `git reset --hard HEAD~1` which undoes everything from the commit to the edits you have made. This is very risky to do as somethings you had writen could still be important or used so only use this command when you are truly sure that what you have editied is unneeded. 
+
+Last but not least is removing a push that you have made and its not that dificult as you can just remove the commit you have made in the repositary that you are currently working in then use the command `git push` to reset the remote repository back to that state.
