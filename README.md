@@ -17,7 +17,8 @@ The difference between the two is that most of the work will be done with git an
 
 Of course, before we start working with git, you should have a github account and making one should be fairly easy.
 1. go to github.com
-2. put in the information that is required of you (username, email and password)
+2. put in the information that is required of you  
+(if you are a student at HSTAT, use your HSTAT email, but without the @hstat.org)
 3. click the green button that says "create your account"
 4. choose your plan, in this case the free one
 5. click continue 
